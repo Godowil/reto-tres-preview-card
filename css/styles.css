@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Green500: hsl(158, 36%, 37%);
+    --Green700: hsl(158, 42%, 18%);
+    --Black:hsl(212, 21%, 14%);
+    --Grey:hsl(228, 12%, 48%);
+    --Cream:hsl(30, 38%, 92%);
+    --White:hsl(0, 0%, 100%);
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-family: "Fraunces", serif;
+    font-size: 14px;
+    background-color: var(--Cream);
+    
+
+    
+}
+.container{
+    width: 345px;
+    height: 700px;
+    overflow: hidden;
+    margin: 60px auto;
+    border-radius: 12px;
+    background-color: var(--White);
+    
+}
+.bottle{
+    width: 100%;
+    
+}
+.perfume{
+    margin:0 24px 20px 24px;
+    padding-top: 20px;
+    color: var(--Grey);
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+.essence{
+    font-family:"Fraunces", serif;
+    font-size: 30px;
+    margin: 0 24px 16px 24px;
+    line-height: 34px;
+}
+.feature{
+    margin: 0 24px 30px 24px;
+    color: var(--Grey);
+    font-size: 0.9em;
+    line-height: 20px;
+
+}
+.price{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0 24px 20px 24px;
+
+}
+.total__price{
+    font-family:"Fraunces", serif ;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--Green500);
+
+}
+.full__price{
+    color: var(--Grey);
+    text-decoration: line-through;
+}
+.button{
+    width: 294px;
+    height: 50px;
+    background-color: var(--Green500);
+    border-radius: 8px;
+    color: var(--White);
+    border: none;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 700;
+
+}
+.button:hover{
+    cursor: pointer;
+    background-color: var(--Green700);
+}
+.icon__button{
+    margin-right: 1em;
+}
+
+/*Desktop*/
+@media(min-width:700px){
+    .container{
+        width: 610px;
+        height: 440px;
+        display: flex;
+        margin: 180px auto;
+        
+    }
+    .bottle{
+        content: url(/images/image-product-desktop.jpg);
+        width: 305px;
+    }
+    .product__description{
+        width: 305px;
+       
+    }
+    .button{
+        width: 260px;
+    }
+    .price{
+        margin-bottom: 2em;
+    }
+    .feature{
+        line-height: 22px;
+         margin-bottom: 28px;
+    }
+
+}
+
