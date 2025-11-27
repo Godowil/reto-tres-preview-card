@@ -107,7 +107,7 @@ body{
         
     }
     .bottle{
-        content: url(/images/image-product-desktop.jpg);
+        content: url(images/image-product-desktop.jpg);
         width: 305px;
     }
     .product__description{
